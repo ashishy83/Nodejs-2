@@ -26,7 +26,7 @@ app.get('/abc',(req,res)=>{
 
 app.post('/form',(req,res)=>{
     const content = 'hello';
-    fs.appendFile(path.join(__dirname,'/message.txt'),content,(err)={
+    fs.appendFile(path.join(__dirname,'/message.txt'),content,(err)=>{
         if(err){
             console.log(err);
         }
